@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root{
+    --green:#38ccae;
+    --dark: #1b1b1b;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+background-color: var(--green);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right top  ,var(--dark), var(--green));
+    overflow: hidden;
+
+}
+
+.container {
+
+    width: 66%;
+    height: 66%;
+    background-color: rgba(0, 0, 0, 0.75);
+    background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+    position: relative;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color:#ffffff
+    
+}
+
+.content {
+
+text-align: center;
+padding: 20px;
+font-family: 'Montserrat', sans-serif;
+font-size: 30px;
+
+}
+
+.bg_img {
+
+    position: absolute;
+
+}
+
+.bg__img--button {
+
+    position: absolute;
+    top: 0;
+    right: 60%;
+    animation: slideDown 5s linear infinite;
+    width: 30vh;
+    height: 30vh;
+}
+
+
+.bg__img--dots {
+
+top: 0;
+left: 50%;
+height: 75vh;
+animation: rotate 10s linear infinite;
+
+}
+
+
+@keyframes slideDown {
+
+from{ transform: translateY(-30vh);}
+to {transform: translateY(100vh)}
+
+}
+
+
+@keyframes rotate {
+
+from {transform: rotate(0deg);}
+to {transform: rotate(360deg)}
+
+
+}
